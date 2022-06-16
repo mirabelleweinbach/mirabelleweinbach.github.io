@@ -1,8 +1,4 @@
-import webdriver from selenium 
-import Key from selenium.webdriver.common.keys 
-import By from selenium.webdriver.common.by 
-import ChromeDriverManager from webdriver_manager.chrome
-import Builder from selenium.webdriver.Builder; 
+
 
 
 // get user's location from their input to the button
@@ -21,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function getWeath(location) {
     
-    //const {By,Key,Builder}=require('selenium-webdriver') ;
-    //require('chromedriver');
+    const {By,Key,Builder}=require('selenium-webdriver') ;
+    require('chromedriver');
     let driver = await new Builder().forBrowser("chrome").build();
     await driver.get('http://www.weather.com/');
     await driver.findElement(By.id('LocationSearch_input')).sendKeys(location, Key.RETURN);
