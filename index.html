@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="button.css">
+    <style>
+    body {
+    max-height:280px; 
+    width:300px;
+    overflow:auto; 
+    }
+    </style>
+  </head>
+  <body>
+    <label>Welcome to WeatherSongs!</label>
+    <input style="width: 200px;" type="text" id="location" name="location" size="10" placeholder = "city, state">
+    <br>
+    <button type ="button" id="go">Go!</button>
+    <script type="module" src="popup.js"></script>
+    <script type="module" src="/node_modules/selenium-webdriver/chrome.js"></script>
+    <script type="module" src="/node_modules/chromedriver/lib/chromedriver.js"></script>
+  </body>
+</html>
+
